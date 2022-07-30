@@ -752,7 +752,7 @@ lists.addEventListener('click', e => {
 const input = document.querySelector('#phone');
 const iti = window.intlTelInput(input, {
 	utilsScript: "https://cdn.jsdelivr.net/npm/intl-tel-input@17.0.3/build/js/utils.js",
-	defaultCountry: 'auto',
+	defaultCountry: 'ru',
   	preferredCountries: ['ru']
 });
 window.iti = iti;
