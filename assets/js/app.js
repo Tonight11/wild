@@ -1,3 +1,4 @@
+import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.esm.browser.min.js';
 if (window.matchMedia('(min-width:1200px)').matches) {
 	let scene = document.getElementById('scene');
 	let parallaxInstance = new Parallax(scene, {
@@ -55,39 +56,6 @@ if (window.matchMedia('(min-width:1200px)').matches) {
 	});
 }
 
-// let lang = document.querySelectorAll('.header__choose')
-// let currentLocation = location.href;
-// let menu = document.querySelectorAll('.menu__link');
-// let menuLength = menu.length;
-
-// Для ондностроничной страницы
-// menu.forEach(c => {
-
-// 	c.addEventListener('click', function () {
-
-// 		menu.forEach(nav => nav.classList.remove('active'));
-// 		this.classList.add('active')
-
-// 	})
-
-// })
-
-// lang.forEach(c => {
-
-// 	c.addEventListener('click', function () {
-// 		lang.forEach(nav => nav.classList.remove('active'));
-// 		this.classList.add('active')
-// 	})
-
-// })
-
-// Для многостраничной страницы
-
-// for (let i = 0; i < menuLength; i++) {
-// 	if (menu[i].href === currentLocation) {
-// 		menu[i].classList.add("active");
-// 	}
-// }
 let burger = document.querySelector('.burger');
 let burgerItem = document.querySelector('.menu__icon');
 let iconMenu = document.querySelector('.menu__body');
@@ -102,7 +70,6 @@ if (burger) {
 		shadow.classList.toggle('active');
 	});
 }
-import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.esm.browser.min.js';
 
 let swiperZoom;
 
@@ -301,11 +268,6 @@ madalArea.forEach(i => {
 		document.body.classList.remove('lock');
 	});
 });
-// Dynamic Adapt v.1
-// HTML data-da="where(uniq class name),when(breakpoint),position(digi)"
-// e.x. data-da=".item,992,2"
-// Andrikanych Yevhen 2020
-// https://www.youtube.com/c/freelancerlifestyle
 
 'use strict';
 
